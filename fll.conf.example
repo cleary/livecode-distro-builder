@@ -1,0 +1,127 @@
+[ 'sourcedistro' ]
+# this section is experimental, modify at your own risk
+	name = ubuntu
+	codename = impish
+
+[ 'packages' ]
+profile = ansible-livecode
+
+i18n = """
+	#cs_CZ
+	#da_DK
+	#de_DE
+	#el_GR
+	en_AU
+	en_GB
+	en_US
+	#es_ES
+	#fr_FR
+	#it_IT
+	#ja_JP
+	#nl_NL
+	#pl_PL
+	#pt_BR
+	#pt_PT
+	#ro_RO
+	#ru_RU
+"""
+
+lang = """
+	#cs_CZ
+	#de_DE
+	#el_GR
+	en_AU
+	en_GB
+	en_US
+	#es_ES
+	#fr_FR
+	#it_IT
+	#ja_JP
+	#nl_NL
+	#pl_PL
+	#pt_BR
+	#pt_PT
+	#ro_RO
+	#ru_RU
+"""
+
+#packages = """
+#"""
+
+#deps = """
+#"""
+
+#debconf = """
+#"""
+
+
+# no longer used, amd64 only
+[ 'archs' ]
+	#[[ 'i386' ]]
+#	#linux = generic
+#
+#	[[ 'amd64' ]]
+#	#linux = generic
+
+[ 'repos' ]
+        [[ 'ubuntu' ]]
+        label           = ubuntu
+        uri             = http://archive.ubuntu.com/ubuntu/
+        cached          = http://aptmirror:3142/archive.ubuntu.com/ubuntu/
+        suite           = impish
+        components      = main universe multiverse restricted
+
+[ 'options' ]
+#build_dir = /path/to/temp_build_area
+#output_dir = /path/to/iso_output_dir
+
+#build_log =
+
+#media_include = /path/to/release/notes
+
+#apt_preferences = /path/to/apt_preferences
+
+#http_proxy = http://user:pass@proxyhost:port
+#https_proxy = http://user:pass@proxyhost:port
+#ftp_proxy =
+
+boot_cmdline = maybe-ubiquity ipv6.disable=1 quiet splash noprompt toram reboot=pci --
+
+boot_timeout = 10
+
+#apt_recommends = yes
+
+bootstrapper = debootstrap
+
+#squashfs_comp = gzip
+
+[ 'distro' ]
+FLL_DISTRO_NAME = "LCD"
+FLL_DISTRO_URL =  "https://github.com/cleary/livecode-distro-package-profile"
+
+FLL_IMAGE_DIR  = "casper"
+FLL_IMAGE_FILE = "lcd"
+#FLL_IMAGE_FS = "ext4"
+#FLL_IMAGE_MB = "16384"
+# probably no longer used FLL_UNION_MODULE = "aufs"
+# no longer used FLL_MOUNTPOINT = "/fll/fullstory"
+FLL_MEDIA_NAME = "lcdv0.1.iso"
+
+FLL_LIVE_USER        = "ubuntu"
+FLL_LIVE_USER_GROUPS = "dialout dip fuse cdrom audio video plugdev users floppy netdev powerdev scanner vboxusers kvm"
+
+# non-functional
+#FLL_WALLPAPER        = "/usr/share/backgrounds/dbw-gt.jpg"
+#FLL_GFXBOOT_THEME    = "ubuntu"
+#FLL_IRC_SERVER       = "irc.freenode.net"
+#FLL_IRC_PORT         = "6667"
+#FLL_IRC_CHANNEL      = "#ubuntu"
+#FLL_CDROM_INDEX      = "GT release notes"
+#FLL_CDROM_INDEX_ICON = "release/release-notes"
+
+FLL_DISTRO_VERSION           = "0.1"
+FLL_DISTRO_CODENAME_SAFE     = "lcdv01"
+FLL_DISTRO_CODENAME          = "Live Code Distro v0.1"
+FLL_DISTRO_CODENAME_REV_SAFE =
+FLL_DISTRO_CODENAME_REV      =
+

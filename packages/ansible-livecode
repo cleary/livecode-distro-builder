@@ -1,0 +1,7 @@
+desc = """
+        Packages to build an ubuntu based livecode distro
+"""
+
+deps = """
+	ansible-livecode
+"""

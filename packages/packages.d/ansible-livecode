@@ -1,0 +1,20 @@
+desc = """
+	Minimal package set to bring ansible-pull up
+"""
+
+debconf = """
+"""
+
+packages = """
+	ansible
+	git
+"""
+
+i386 = """
+"""
+
+amd64 = """
+"""
+
+powerpc = """
+"""

@@ -1,0 +1,11 @@
+Source: livecode-distro-builder
+Section: misc
+Priority: optional
+Maintainer: Bernard Gray <bernard.gray@gmail.com>
+Uploaders:
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.4.0
+Vcs-Git: https://github.com/cleary/livecode-distro-builder.git
+Vcs-Browser: https://github.com/cleary/livecode-distro-builder
+
+# No binary packages are currently built from this source
